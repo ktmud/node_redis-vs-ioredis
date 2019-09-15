@@ -12,7 +12,9 @@ const TEST_DATA = {
   number: 0,
   hash: {
     foo: "bar",
-    hello: "world"
+    hello: "world",
+    bar: "foo",
+    world: "hello",
   }
 };
 
@@ -23,6 +25,7 @@ const units = [
   { name: "set", type: "string" },
   { name: "get", type: "string" },
   { name: "hmset", type: "hash" },
+  { name: "hmget", type: "hash" },
   { name: "hgetall", type: "hash" },
   { name: "incr", type: "number" },
   { name: "keys", type: "*" }
